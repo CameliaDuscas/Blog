@@ -1,0 +1,198 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Camelia Duscas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mystyle.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/login.css" />
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/newproject.css" />
+
+  
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/3.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body id="color" style="background-color:black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href=""> <img class="logo" src="img/3.png" height="40"> Camelia Duscas</a>
+      
+      <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav ml-auto"> 
+    <li id="ButonLogin" class="nav-item"><a class="nav-link"  onclick="document.getElementById('id01').style.display='block'"> Login</a></li>
+    <li class="nav-item"><a class="nav-link" href="index.html">Blog </a></li>
+    <li class="nav-item"><a class="nav-link"href="#About" > About </a></li>
+    <li class="nav-item"><a class="nav-link" href="#Portofolio"> Portofolio</a></li>
+    <li class="nav-item"><a class="nav-link" href="#Contact"> Contact</a></li>
+    <li style="display:none;" id="butonProiect"class="nav-item"><a class="nav-link"  onclick="document.getElementById('id02').style.display='block'"> Creeaza proiecte</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="About"class="socialDiv">
+        <div class="nameDiv">
+           <span> <h1 id="myName">Duscas Camelia</h1></span>
+           <span> <h4 id="project">Speak programming project</h4></span>
+        </div>
+        <div class="socialMediaButton">
+                <a href="https://www.facebook.com/camelia.duscas" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/cameliaduscas/" class="fa fa-instagram"></a>
+        </div>
+    </div>
+    
+    <div id="Portofolio" class="projects">
+      <div class="divProiecte"id="proiecte">
+      
+        </div>
+
+    </div>
+
+    <div id="Contact"class="contactEmail">
+        
+        <div class="contact">
+            
+
+        </div>  
+        <div class="contact1">     
+        <div class="container" style="margin-left:350px">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="well well-sm">
+                      <form class="form-horizontal" action="" method="post">
+                      <fieldset>
+                        <legend class="text-center">CONTACT</legend>
+                
+                        <!-- Name input-->
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="name">Name</label>
+                          <div class="col-md-9">
+                            <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                          </div>
+                        </div>
+                
+                        <!-- Email input-->
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                          <div class="col-md-9">
+                            <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                          </div>
+                        </div>
+                
+                        <!-- Message body -->
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="message">Your message</label>
+                          <div class="col-md-9">
+                            <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                          </div>
+                        </div>
+                
+                        <!-- Form actions -->
+                        <div class="form-group">
+                          <div class="col-md-12 text-right">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                          </div>
+                        </div>
+                      </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </div></div>
+
+    </div>
+    <div id="id01" class="modal">
+  
+      <div class="modal-content animate" style="background-color: #ffffffde; width: 40%; ">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="img/users.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="email"><b>Username</b></label>
+          <input id="p_email" type="text" placeholder="Enter Username" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input id="password" type="password" placeholder="Enter Password" required>
+            
+          <button onclick="functionlogin()" >Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>;
+       <div id="id02" class="modal">
+  
+        <div class="modal-content animate" style="background-color: #ffffffde; width: 40%; ">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            
+          </div>
+      
+          <div class="container">
+            <label for="numeleProiectului"><b>Numele proiectului</b></label>
+            <input id="numeleProiectului" type="text" placeholder="Introdu numele proiectului" required>
+      
+            <label for="description"><b>Descrierea proiectului</b></label>
+            <input id="description" type="text" placeholder="Descrie proiectul" required>
+
+            <label for="technologies"><b>Tehnologii</b></label>
+            <input id="technologies" type="text" placeholder="Tehnologii utilizate" required>
+
+            <label for="imagine"><b>Linkul imaginii</b></label>
+            <input id="imagine" type="text" placeholder="Introdu link-ul imaginii" required>
+
+            <label for="link"><b>Link proiect</b></label>
+            <input id="link" type="text" placeholder="Introdu link-ul proiectului" required>
+              
+            <button onclick="saveProject()" >Salveaza proiectul</button>
+            
+              
+      
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+           
+          </div>
+        </div>
+      </div>
+      <script>
+        // Get the modal
+        var modal = document.getElementById('id02');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>;
+</body>
+</html>

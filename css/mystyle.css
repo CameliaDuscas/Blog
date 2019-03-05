@@ -1,0 +1,99 @@
+.socialDiv{
+    background-image:url("../img/socialdiv1.jpg");
+    height: 600px;
+    background-size: 100% 100%;
+}
+.nameDiv{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    
+}
+#myName{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 150px;
+    color:white;
+    font-style: oblique;
+}
+.divProiecte{
+  display: flex;
+  
+}
+#project{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+     color:white;
+    font-style: oblique;
+}
+.socialMediaButton{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    color:white;
+    font-style: oblique;
+}
+.fa {
+    padding: 6px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background:orange;
+    color:white;
+  }
+  .projects{
+    background-image:url("../img/parchetimg.jpg");
+    height: 600px;
+    background-size: 100% 100%;
+    margin-top: 30px;
+  }
+  .contactEmail{
+      background-image:url(../img/7.jpg);
+      height: 600px;
+     background-size: 100% 100%;
+     margin-top: 30px;
+  }
+  #titlu{
+      color: white;
+      font-style: oblique;
+  }
+  .contact{
+    
+    height: 600px;
+    background-size: 100% 100%;
+    margin-top: 30px;
+    width:50%;
+    float: left;
+    
+  }
+  
+
+  .contact1{
+      
+      width:50%;
+      margin-top: 30px;
+      float:right;
+  }
